@@ -1,0 +1,129 @@
+:root {
+    --violet: rgb(65, 42, 107);
+    --yellow: #fadb61;
+    --gray: #f8f8f8;
+    --transition: .3s ease;
+}
+
+
+h2{
+    color: var(--violet);
+}
+
+.underline{
+    width: 15%;
+    margin: 20px auto;
+    height: 5px;
+    background-color: var(--yellow);
+}
+
+.intro{
+    margin-bottom: 50px !important;
+}
+
+/************************************
+nav
+*************************************/
+nav.bg-light{
+    background: var(--violet) !important;
+}
+
+/************************************
+carousel
+*************************************/
+#carouselExampleCaptions .carousel-caption{
+    bottom: 15%;
+}
+
+/************************************
+about us
+*************************************/
+.about img{
+    border-radius: 50px;
+}
+
+/************************************
+work
+*************************************/
+.work .work-overlay{
+    background-color: #fff;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.work .work-overlay:hover{
+    opacity: 0.7;
+}
+
+.work img{
+    border-radius: 25px;
+}
+
+
+/************************************
+message
+*************************************/
+.message, .popup{
+    background-color: var(--violet);
+    color: var(--yellow);
+    padding: 100px 0;
+}
+
+/************************************
+popup
+*************************************/
+.popup {
+   color: var(--yellow);
+}
+
+.popup .modal{
+    color: black;
+}
+
+.popup.btn{
+    margin-top: -20px;
+}
+
+/************************************
+footer
+*************************************/
+footer{
+    background-color: var(--yellow);
+}
+
+footer p{
+    padding-top: 5px;
+    font-size: .8rem;
+}
+
+/************************************
+responsive
+*************************************/
+ @media(max-width: 768px){
+    #carouselExampleCaptions img{
+        height: 30vh!important;
+    }
+    #carouselExampleCaptions .lead{
+        font-size: 16px;
+    }
+    #carouselExampleCaptions .carousel-caption{
+        bottom: 5%;
+    }
+
+    h2{
+        font-size: 32px !important;
+    }
+
+    .about .col-md-6:nth-child(2){
+        text-align: center;
+    }
+
+    .work-overlay h4,p{
+        font-size: 10px;
+    }
+
+    .contact .col-md-4:nth-child(1) img{
+        margin-bottom: 5% !important; 
+    }
+    
+} 
